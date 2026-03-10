@@ -1,0 +1,163 @@
+/* 地图样式 */
+.leaflet-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 表格样式优化 */
+.ant-table-thead > tr > th {
+  background-color: #fafafa !important;
+  font-weight: 600;
+}
+
+/* 卡片悬停效果 */
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 标签样式优化 */
+.ant-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* 按钮样式优化 */
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 表单样式优化 */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* 统计卡片样式 */
+.ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.ant-statistic-content {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* 模态框样式 */
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+/* 列表项样式 */
+.ant-list-item {
+  transition: all 0.3s ease;
+}
+
+.ant-list-item:hover {
+  background-color: #fafafa;
+}
+
+/* 标签页样式 */
+.ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+.ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+/* 输入框样式 */
+.ant-input,
+.ant-input-number {
+  border-radius: 6px;
+}
+
+/* 选择器样式 */
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+
+/* 日期选择器样式 */
+.ant-picker {
+  border-radius: 6px;
+}
+
+/* 空状态样式 */
+.ant-empty {
+  padding: 48px 0;
+}
+
+/* 消息提示样式 */
+.ant-message {
+  z-index: 9999;
+}
+
+/* 全局动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 16px !important;
+  }
+
+  .ant-layout-content {
+    padding: 24px 16px !important;
+  }
+}
